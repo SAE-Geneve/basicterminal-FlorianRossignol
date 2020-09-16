@@ -5,7 +5,7 @@ int main ()
 	std::cout<<"un vaisseau ennemi entre dans votre champ de vision\n\n";
 	std::cout << "combiens de d\x82\gats lui inflige vous ? (maximum 4)\n\n";
 	int pv = 2;
-	std::cin >> pv ,"\n\n";
+	std::cin >> pv,"\n\n";
 	if (pv <= 2)
 	{
 		std::cout << "perdu le vaisseau avait plus de pv \n\n";
@@ -56,5 +56,11 @@ int main ()
 		std::cout << "je peux plus rien pour vous maintenant\n\n";
 		return 0;
 	}
+	std::cout << "maintenant on va comparer tout ca dans la tableau de la galaxie !\n\n";
+	int tableau = pv + pv2;
+	std::cout <<"\n"<< tableau <<"\n\n";
+	
+	std::cout <<"\n" "votre score final est ce magnifique chiffre\n\n";
+	
 	return 0;
 }
