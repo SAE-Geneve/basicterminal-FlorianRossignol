@@ -1,12 +1,10 @@
 #include <iostream>
-#include <algorithm>
-#include <array>
 #include <string>
 std::string histoire() {
 	int pv = 2;
-		std::cout << "\n\n""un vaisseau ennemi entre dans votre champ de vision\n\n";
-		std::cout << "combiens de d\x82\gats lui inflige vous ? (maximum 4)\n\n";
-		std::cin >> pv, "\n\n";
+	std::cout << "\n\n""un vaisseau ennemi entre dans votre champ de vision\n\n";
+	std::cout << "combiens de d\x82\gats lui inflige vous ? (maximum 4)\n\n";
+	std::cin >> pv, "\n\n";
 
 	if (pv <= 2)
 
@@ -64,10 +62,10 @@ std::string histoire() {
 	std::cout << "\n" << tableau << "\n\n";
 
 	std::cout << "\n  votre score final est ce magnifique chiffre\n\n";
-	std::cout << "vous etes super fort";
+	std::cout << "vous etes super fort\n\n";
 	std::string premier_nom;
 	std::cin >> premier_nom;
-	
+
 	return premier_nom;
 }
 
@@ -93,7 +91,7 @@ int main()
 	{
 		reponse_questions = true;
 		std::cout << "parfait on va commencer !\n\n";
-}
+	}
 	premier_nom = histoire();
 	return 0;
 }
