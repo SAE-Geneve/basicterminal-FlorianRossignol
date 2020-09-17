@@ -9,7 +9,8 @@ std::string histoire() {
 	if (pv <= 2)
 
 	{
-		std::cout << "perdu le vaisseau avait plus de pv \n\n";
+		std::cout << "perdu le vaisseau avait plus de pvs \n\n";
+		return "";
 	}
 	if (pv > 2 && pv == 4)
 
