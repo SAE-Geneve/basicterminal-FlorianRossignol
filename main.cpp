@@ -8,7 +8,20 @@ int main ()
 	std::string premier_nom;
 	std::getline(std::cin,premier_nom);
 	std::cout << "voici ton nom !\n\n";
-	std::cout << premier_nom,"\n\n";	
+	std::cout << premier_nom + "\n\n";
+	std::cout << "voulez-vous jou\x82\ dans l'espace ?\n\n";
+	std::string reponse = "\n\n";
+	std::cin >> reponse;
+	bool reponse_questions = false;
+	if (reponse == "non")
+	{
+		std::cout << "dommage on ferme tout ca";
+		return 0;
+	} else if (reponse == "oui")
+	{
+		reponse_questions = true;
+		std::cout << "parfait on va commencer !\n\n";
+	}
 std::cout<<"\n\n""un vaisseau ennemi entre dans votre champ de vision\n\n";
 std::cout << "combiens de d\x82\gats lui inflige vous ? (maximum 4)\n\n";
 int pv = 2;
