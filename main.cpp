@@ -39,7 +39,7 @@ std::string histoire() {
 		std::cout << "vous etes un peu con\n\n";
 		return "";
 	}
-	std::cout << "le vaisseau ennemie est sur le point d'attaquer combiens de degats lui inflige vous ? (maximum 8)\n\n";
+	std::cout << "le vaisseau ennemi est sur le point d'attaquer combiens de degats lui inflige vous ? (maximum 8)\n\n";
 	int pv2;
 	pv2 = 7;
 	std::cin >> pv2, "\n\n";
@@ -66,13 +66,11 @@ std::string histoire() {
 	std::cout << "vous etes super fort\n\n";
 	std::string premier_nom;
 	std::cin >> premier_nom;
-
 	return premier_nom;
 }
-
+	
 int main()
 {
-
 	std::cout << "rentre ton nom !\n\n";
 	std::string premier_nom;
 	std::getline(std::cin, premier_nom);
